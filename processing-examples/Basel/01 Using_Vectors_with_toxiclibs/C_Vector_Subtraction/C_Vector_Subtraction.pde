@@ -31,32 +31,29 @@ void draw()
   fill( 255 );
   ellipse( 0, 0, 4, 4 );
 
-  // again, our vector from the previous example
+  // again, our vector from the previous examples
   Vec2D aVector = new Vec2D( 50, 70 );
   stroke( 255 );
   line( 0, 0, aVector.x, aVector.y );
 
-  // our mouse position from the previous example
+  // our mouse position from the previous examples
   Vec2D mousePosition = new Vec2D( mouseX - width/2, mouseY - height/2 );
   stroke( 255, 255, 0 );
   line( 0, 0, mousePosition.x, mousePosition.y );
   
-  // ADDITION:
-  // this will add both vectors and return a new one!
-  // if you want to add something to an existing vector
-  // see addSelf() of Vec2D
-  Vec2D addition = aVector.add( mousePosition );
-  stroke( 255, 0, 255 );
-  line( 0, 0, addition.x, addition.y );
-  text( "Sum\n" + addition, addition.x, addition.y - 30 );
+  // SUBTRACTION:
+  // this will subtract our vector from our mouse position and return a new one!
+  // the result is a vector pointing from our vector towards our mouse position 
+  // if you want to subtract something from an existing vector
+  // see subSelf() of Vec2D
+  Vec2D difference = mousePosition.sub( aVector );
+  stroke( 255, 0, 255, 100 );
+  line( 0, 0, difference.x, difference.y );
+  text( "Difference\n" + difference, difference.x, difference.y - 30 );
 
-  // the stuff drawn here is for further explanation:
-  // with vector addition, we can translate a given vector
-  Vec2D translatedVector = mousePosition.add( aVector );
-  Vec2D translatedMousePosition = aVector.add( mousePosition );
-  // then we can draw the vector from its new origin
-  stroke( 255, 255, 0, 100 );
-  line( aVector.x, aVector.y, translatedVector.x, translatedVector.y );
-  stroke( 255, 100 );
-  line( mousePosition.x, mousePosition.y, translatedMousePosition.x, translatedMousePosition.y );
+  // to put this into perspective we translate the difference vector again
+  difference.addSelf( aVector );
+  stroke( 255, 0, 255 );
+  line( aVector.x, aVector.y, difference.x, difference.y );
 }
+

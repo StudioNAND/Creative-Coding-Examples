@@ -26,25 +26,32 @@ void draw()
   background( 33 );
   // we want the center of our canvas to be at (0, 0). this makes things easier to explain
   translate( width/2, height/2 );
-
-  // we create a new vector that points towards the center of the screen
-  // using our app’s width and height properties
-  // it will hold the x & y coordinates for us
-  Vec2D aVector = new Vec2D( 50, 70 );
   
   // we’ll draw a circle at the center of our screen
   noStroke();
   fill( 255 );
   ellipse( 0, 0, 4, 4 );
-  
+
+  // a simple vector
+  // it will hold the x & y coordinates for us
+  Vec2D aVector = new Vec2D( 50, 70 );
+  // we can simply use the vector’s coordinates for drawing and
+  // calculation using the 'dot'-Syntax
   stroke( 255 );
-  // we can simply use its coordinates then for drawing and calculation
-  // using the 'dot'-Syntax
   line( 0, 0, aVector.x, aVector.y );
   
-  // we also can print or display their values as text to understand
-  // what is going on
-  textAlign( CENTER );
-  text( "A Vector\n" + aVector, 0, -30 );
+  // we also can print or display its values to
+  // understand what is going on
+  text( "A Vector\n" + aVector, aVector.x, aVector.y - 30 );
+  
+  // additionally, let’s get the mouse position as a Vec2D
+  // we subtract width/2 and height/2 here because (0, 0) is at the center
+  // of the screen, remember?
+  Vec2D mousePosition = new Vec2D( mouseX - width/2, mouseY - height/2 );
+  
+  // and draw this with a little text as well
+  stroke( 255, 255, 0 );
+  line( 0, 0, mousePosition.x, mousePosition.y );
+  text( "Mouse Position\n" + mousePosition, mousePosition.x, mousePosition.y - 30 );
 }
 
