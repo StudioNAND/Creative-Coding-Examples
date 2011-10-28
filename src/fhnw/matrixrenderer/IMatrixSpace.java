@@ -1,4 +1,4 @@
-package fhnw.matrixrenderer.renderer;
+package fhnw.matrixrenderer;
 
 import processing.core.PGraphics;
 

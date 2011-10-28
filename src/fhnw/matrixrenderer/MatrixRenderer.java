@@ -1,4 +1,4 @@
-package fhnw.matrixrenderer.renderer;
+package fhnw.matrixrenderer;
 
 import java.util.ArrayList;
 import processing.core.PApplet;
