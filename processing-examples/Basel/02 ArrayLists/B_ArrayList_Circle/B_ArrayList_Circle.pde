@@ -19,7 +19,11 @@ import java.util.ArrayList;
 float RADIUS = 150;
 
 //the ArrayList holding the Vec2D on the circle
+<<<<<<< HEAD
 ArrayList<Vec2D> pointsOnCircle;
+=======
+private ArrayList<Vec2D> pointsOnCircle;
+>>>>>>> fixed bug
 
 //counter
 int cnt;
