@@ -16,15 +16,15 @@ import toxi.geom.*;
 import java.util.ArrayList;
 
 //the radius of the circle
-private static float RADIUS = 150;
+float RADIUS = 150;
 
 //the ArrayList holding the Vec2D on the circle
-private ArrayList<Vec2D> points;
+ArrayList<Vec2D> pointsOnCircle;
 
 //counter
-private int cnt;
+int cnt;
 
-public void setup() {		
+void setup() {		
   size( 400, 400 );
   smooth( );	
 
