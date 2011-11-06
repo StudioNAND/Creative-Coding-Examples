@@ -20,14 +20,14 @@ public abstract class MatrixSpace implements IMatrixSpace {
 	private int numRows = 0;
 	
 	/** Space width in pixel */
-	public int sizeX = 0;
+	public int width = 0;
 	/** Space height in pixel */
-	public int sizeY = 0;
+	public int height = 0;
 	
 	/** Space x-position in pixel */
-	public int positionX = 0;
+	public int x = 0;
 	/** Space y-position in pixel */
-	public int positionY = 0;
+	public int y = 0;
 	
 	/**
 	 * Creates a new Matrix Space at a certain position within the
@@ -132,8 +132,8 @@ public abstract class MatrixSpace implements IMatrixSpace {
 	 * @param theY Position on the y-axis in pixel
 	 */
 	public void position (int theX, int theY) {
-		positionX = theX;
-		positionY = theY;
+		x = theX;
+		y = theY;
 	}
 	
 	/**
@@ -142,35 +142,35 @@ public abstract class MatrixSpace implements IMatrixSpace {
 	 * @param theY Height in pixel
 	 */
 	public void size (int theX, int theY) {
-		sizeX = theX;
-		sizeY = theY;
+		width = theX;
+		height = theY;
 	}
 	
 	/**
 	 * Space position on x-axis in pixel.
 	 */
 	public int positionX () {
-		return positionX;
+		return x;
 	}
 	
 	/**
 	 * Space position on y-axis in pixel.
 	 */
 	public int positionY () {
-		return positionY;
+		return y;
 	}
 	
 	/**
 	 * Space width in pixel.
 	 */
 	public int sizeX () {
-		return sizeX;
+		return width;
 	}
 	
 	/**
 	 * Space height in pixel.
 	 */
 	public int sizeY () {
-		return sizeY;
+		return height;
 	}
 }
