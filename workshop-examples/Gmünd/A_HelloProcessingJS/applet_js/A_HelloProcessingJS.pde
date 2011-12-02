@@ -20,3 +20,4 @@ void draw()
   background( 240 );
   line( mouseX, 0, mouseX, height );
 }
+

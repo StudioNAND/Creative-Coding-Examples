@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>B_IntegratingProcessingJS : muah</title>
+		<link rel="icon"  type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAQAAVzABAEAjBQAaDwYAWjUGAGE6CQBrQQ0ATS8PAFhAJwBUQC8AbFI6AHVXPACBZk4A4NrWAPb19QAAAAAAAMmZmZmZmgAJIwAAAAAAcMIjPjA+PjAKpxIuMDMzMAm0Ii4zMzMACaIiLt3dMAAJtyIuIzPQAAm0Un5yM+IzKLRkfncy4iIotRF+dyLkIiq0QX53F+EiGrQUTkd34iIatEVu7u5iIVrBVVRBRFRVbAtGZGZla2uwAMu7u7u8vADAAwAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAADAAwAA" />
+		<meta name="Generator" content="Processing" />
+		<!--[if lt IE 9]>
+			<script type="text/javascript">alert("Your browser does not support the canvas tag.");</script>
+		<![endif]-->
+		
+		<script src="processing.js" type="text/javascript"></script>
+		<script type="text/javascript">function getProcessingSketchID () { return 'BIntegratingProcessingJS'; }</script>
+
+		
+		<!-- we’ll add jquery & jqueryUI as well as the ui-lightness theme from google-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+		<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css">
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			/* this is important for proper centering
+			   all other css can go to style.css
+			*/
+			#content
+			{
+				width: 960px;
+			}
+		</style>
+		
+		<script>
+			$(function() {
+				$( "#slider" ).slider({
+					slide: function( event, ui ) {
+						Processing.getInstanceById( 'BIntegratingProcessingJS').slideEvent( ui.value * 0.01 );
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="content">
+			<h1>B_IntegratingProcessingJS</h1>
+	    	<p id="description"></p>
+			<div>
+				<canvas id="BIntegratingProcessingJS" data-processing-sources="B_IntegratingProcessingJS.pde" 
+						width="960" height="200">
+					<p>Your browser does not support the canvas tag.</p>
+					<!-- Note: you can put any alternative content here. -->
+				</canvas>
+				<noscript>
+					<p>JavaScript is required to view the contents of this page.</p>
+				</noscript>
+	    	</div>
+			<div id="slider"></div>
+			<p id="sources">code: <a href="B_IntegratingProcessingJS.pde">B_IntegratingProcessingJS</a> </p>
+		</div>
+	</body>
+</html>

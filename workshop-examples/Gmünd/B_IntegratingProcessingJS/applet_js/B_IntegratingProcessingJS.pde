@@ -31,3 +31,4 @@ void slideEvent( float value )
 {
   xPos = width * value;
 }
+
