@@ -1,0 +1,62 @@
+/* get PT Sans from Google Web Fonts */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+body
+{
+	background: #fefefe;
+	font-family: 'PT Sans', sans-serif;
+}
+
+h1
+{
+	font-size: 14px;
+	font-weight: 400;
+}
+
+a, a:hover
+{
+	color: #aaa;
+	text-decoration: none;
+}
+
+canvas
+{
+	display: block;
+	outline: 0px;
+	margin-bottom: 1.5em;
+}
+
+#content
+{ 
+	margin: 50px auto 0px auto;
+	min-width: 300px;
+	overflow: auto;
+	color: #aaa;
+	font-size: 12px;
+}
+
+#sources, #sources a
+{
+	color: #ccc;
+	text-decoration: none;
+}
+
+#sources a:hover
+{
+	text-decoration: underline;
+}
+
+#slider
+{
+	width: 300px;
+	margin: 0 6px 0 6px;
+}
+
+#searchForm #searchTerm
+{
+	height: 18px;
+	font-family: 'PT Sans', sans-serif;
+	color: #ccc;
+	border: 1px solid #ccc;
+	padding: .4em 1em;
+}
