@@ -1,4 +1,4 @@
 .project
 .classpath
 /bin
-applet_js
+applet_js/*
