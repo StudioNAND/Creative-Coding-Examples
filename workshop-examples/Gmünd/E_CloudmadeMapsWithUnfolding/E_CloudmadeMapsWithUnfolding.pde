@@ -18,19 +18,20 @@ import de.fhpotsdam.unfolding.utils.*;
 import de.fhpotsdam.unfolding.providers.*;
 import de.fhpotsdam.unfolding.mapdisplay.MapDisplayFactory;
 
-de.fhpotsdam.unfolding.Map map1;
+de.fhpotsdam.unfolding.Map mMap;
 
-public void setup() {
+void setup()
+{
   size(800, 600, GLConstants.GLGRAPHICS);
 
-  map1 = new de.fhpotsdam.unfolding.Map(this, "map1", 0, 0, width, height, true, false, 
-  	new OpenStreetMap.CloudmadeProvider(MapDisplayFactory.OSM_API_KEY, 30635));
-  map1.setTweening(false);
-  MapUtils.createDefaultEventDispatcher(this, map1);
+  mMap = new de.fhpotsdam.unfolding.Map(this, "Cloudmade Map", 0, 0, width, height, true, false, 
+  	new OpenStreetMap.CloudmadeProvider(MapDisplayFactory.OSM_API_KEY, 47928)); // exchange this number for the number of your cloudmade style
+  mMap.setTweening(false);
+  MapUtils.createDefaultEventDispatcher(this, mMap);
 }
 
-public void draw() {
+void draw()
+{
   background(0);
-
-  map1.draw();
+  mMap.draw();
 }
