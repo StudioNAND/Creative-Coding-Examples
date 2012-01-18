@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF7E6DF514B49D7E009BEE12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7E6DF414B49D7E009BEE12 /* UIKit.framework */; };
+		DF7E6DF714B49D7E009BEE12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7E6DF614B49D7E009BEE12 /* Foundation.framework */; };
+		DF7E6DF914B49D7E009BEE12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7E6DF814B49D7E009BEE12 /* CoreGraphics.framework */; };
+		DF7E6DFF14B49D7E009BEE12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF7E6DFD14B49D7E009BEE12 /* InfoPlist.strings */; };
+		DF7E6E0114B49D7E009BEE12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7E6E0014B49D7E009BEE12 /* main.m */; };
+		DF7E6E0514B49D7E009BEE12 /* HCMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7E6E0414B49D7E009BEE12 /* HCMAppDelegate.m */; };
+		DF7E6E0814B49D7F009BEE12 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7E6E0614B49D7F009BEE12 /* MainStoryboard_iPhone.storyboard */; };
+		DF7E6E0B14B49D7F009BEE12 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7E6E0914B49D7F009BEE12 /* MainStoryboard_iPad.storyboard */; };
+		DF7E6E0E14B49D7F009BEE12 /* HCMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7E6E0D14B49D7F009BEE12 /* HCMViewController.m */; };
+		DF7E6E1514B4D04D009BEE12 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7E6E1414B4D04D009BEE12 /* libsqlite3.dylib */; };
+		DF7E6E1714B4D172009BEE12 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7E6E1614B4D172009BEE12 /* QuartzCore.framework */; };
+		DF7E6E1914B4D1A7009BEE12 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7E6E1814B4D1A7009BEE12 /* libstdc++.6.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF7E6DF014B49D7E009BEE12 /* HelloCloudMade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCloudMade.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7E6DF414B49D7E009BEE12 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF7E6DF614B49D7E009BEE12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF7E6DF814B49D7E009BEE12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF7E6DFC14B49D7E009BEE12 /* HelloCloudMade-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloCloudMade-Info.plist"; sourceTree = "<group>"; };
+		DF7E6DFE14B49D7E009BEE12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF7E6E0014B49D7E009BEE12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF7E6E0214B49D7E009BEE12 /* HelloCloudMade-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloCloudMade-Prefix.pch"; sourceTree = "<group>"; };
+		DF7E6E0314B49D7E009BEE12 /* HCMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCMAppDelegate.h; sourceTree = "<group>"; };
+		DF7E6E0414B49D7E009BEE12 /* HCMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCMAppDelegate.m; sourceTree = "<group>"; };
+		DF7E6E0714B49D7F009BEE12 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		DF7E6E0A14B49D7F009BEE12 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		DF7E6E0C14B49D7F009BEE12 /* HCMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCMViewController.h; sourceTree = "<group>"; };
+		DF7E6E0D14B49D7F009BEE12 /* HCMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCMViewController.m; sourceTree = "<group>"; };
+		DF7E6E1414B4D04D009BEE12 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DF7E6E1614B4D172009BEE12 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DF7E6E1814B4D1A7009BEE12 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF7E6DED14B49D7E009BEE12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7E6E1914B4D1A7009BEE12 /* libstdc++.6.dylib in Frameworks */,
+				DF7E6E1714B4D172009BEE12 /* QuartzCore.framework in Frameworks */,
+				DF7E6E1514B4D04D009BEE12 /* libsqlite3.dylib in Frameworks */,
+				DF7E6DF514B49D7E009BEE12 /* UIKit.framework in Frameworks */,
+				DF7E6DF714B49D7E009BEE12 /* Foundation.framework in Frameworks */,
+				DF7E6DF914B49D7E009BEE12 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF7E6DE514B49D7E009BEE12 = {
+			isa = PBXGroup;
+			children = (
+				DF7E6DFA14B49D7E009BEE12 /* HelloCloudMade */,
+				DF7E6DF314B49D7E009BEE12 /* Frameworks */,
+				DF7E6DF114B49D7E009BEE12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF7E6DF114B49D7E009BEE12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF7E6DF014B49D7E009BEE12 /* HelloCloudMade.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF7E6DF314B49D7E009BEE12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF7E6E1814B4D1A7009BEE12 /* libstdc++.6.dylib */,
+				DF7E6E1414B4D04D009BEE12 /* libsqlite3.dylib */,
+				DF7E6E1614B4D172009BEE12 /* QuartzCore.framework */,
+				DF7E6DF414B49D7E009BEE12 /* UIKit.framework */,
+				DF7E6DF614B49D7E009BEE12 /* Foundation.framework */,
+				DF7E6DF814B49D7E009BEE12 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF7E6DFA14B49D7E009BEE12 /* HelloCloudMade */ = {
+			isa = PBXGroup;
+			children = (
+				DF7E6E0314B49D7E009BEE12 /* HCMAppDelegate.h */,
+				DF7E6E0414B49D7E009BEE12 /* HCMAppDelegate.m */,
+				DF7E6E0614B49D7F009BEE12 /* MainStoryboard_iPhone.storyboard */,
+				DF7E6E0914B49D7F009BEE12 /* MainStoryboard_iPad.storyboard */,
+				DF7E6E0C14B49D7F009BEE12 /* HCMViewController.h */,
+				DF7E6E0D14B49D7F009BEE12 /* HCMViewController.m */,
+				DF7E6DFB14B49D7E009BEE12 /* Supporting Files */,
+			);
+			path = HelloCloudMade;
+			sourceTree = "<group>";
+		};
+		DF7E6DFB14B49D7E009BEE12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF7E6DFC14B49D7E009BEE12 /* HelloCloudMade-Info.plist */,
+				DF7E6DFD14B49D7E009BEE12 /* InfoPlist.strings */,
+				DF7E6E0014B49D7E009BEE12 /* main.m */,
+				DF7E6E0214B49D7E009BEE12 /* HelloCloudMade-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF7E6DEF14B49D7E009BEE12 /* HelloCloudMade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7E6E1114B49D7F009BEE12 /* Build configuration list for PBXNativeTarget "HelloCloudMade" */;
+			buildPhases = (
+				DF7E6DEC14B49D7E009BEE12 /* Sources */,
+				DF7E6DED14B49D7E009BEE12 /* Frameworks */,
+				DF7E6DEE14B49D7E009BEE12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloCloudMade;
+			productName = HelloCloudMade;
+			productReference = DF7E6DF014B49D7E009BEE12 /* HelloCloudMade.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF7E6DE714B49D7E009BEE12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = stephanthiel.com;
+			};
+			buildConfigurationList = DF7E6DEA14B49D7E009BEE12 /* Build configuration list for PBXProject "HelloCloudMade" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF7E6DE514B49D7E009BEE12;
+			productRefGroup = DF7E6DF114B49D7E009BEE12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF7E6DEF14B49D7E009BEE12 /* HelloCloudMade */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF7E6DEE14B49D7E009BEE12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7E6DFF14B49D7E009BEE12 /* InfoPlist.strings in Resources */,
+				DF7E6E0814B49D7F009BEE12 /* MainStoryboard_iPhone.storyboard in Resources */,
+				DF7E6E0B14B49D7F009BEE12 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF7E6DEC14B49D7E009BEE12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7E6E0114B49D7E009BEE12 /* main.m in Sources */,
+				DF7E6E0514B49D7E009BEE12 /* HCMAppDelegate.m in Sources */,
+				DF7E6E0E14B49D7F009BEE12 /* HCMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF7E6DFD14B49D7E009BEE12 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF7E6DFE14B49D7E009BEE12 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DF7E6E0614B49D7F009BEE12 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF7E6E0714B49D7F009BEE12 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DF7E6E0914B49D7F009BEE12 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF7E6E0A14B49D7F009BEE12 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF7E6E0F14B49D7F009BEE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF7E6E1014B49D7F009BEE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF7E6E1214B49D7F009BEE12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloCloudMade/HelloCloudMade-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/inc/route-me",
+					"$(SRCROOT)/inc/Proj4",
+					"$(SRCROOT)/inc/CloudMade",
+				);
+				INFOPLIST_FILE = "HelloCloudMade/HelloCloudMade-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/libs/route-me",
+					"$(SRCROOT)/libs/CloudMade",
+					"$(SRCROOT)/libs/route-me",
+					"$(SRCROOT)/libs/CloudMade",
+					"$(SRCROOT)/libs/CloudMade",
+					"$(SRCROOT)/libs/CloudMade",
+					"$(SRCROOT)/libs/Proj4",
+					"$(SRCROOT)/libs/CloudMade",
+					"$(SRCROOT)/libs/Proj4",
+				);
+				OTHER_LDFLAGS = (
+					"-lProj4",
+					"-lMapView",
+					"-lCloudMadeApi",
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF7E6E1314B49D7F009BEE12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloCloudMade/HelloCloudMade-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/inc/route-me",
+					"$(SRCROOT)/inc/Proj4",
+					"$(SRCROOT)/inc/CloudMade",
+				);
+				INFOPLIST_FILE = "HelloCloudMade/HelloCloudMade-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/libs/route-me",
+					"$(SRCROOT)/libs/CloudMade",
+					"$(SRCROOT)/libs/route-me",
+					"$(SRCROOT)/libs/CloudMade",
+					"$(SRCROOT)/libs/CloudMade",
+					"$(SRCROOT)/libs/CloudMade",
+					"$(SRCROOT)/libs/Proj4",
+					"$(SRCROOT)/libs/CloudMade",
+					"$(SRCROOT)/libs/Proj4",
+				);
+				OTHER_LDFLAGS = (
+					"-lProj4",
+					"-lMapView",
+					"-lCloudMadeApi",
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF7E6DEA14B49D7E009BEE12 /* Build configuration list for PBXProject "HelloCloudMade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7E6E0F14B49D7F009BEE12 /* Debug */,
+				DF7E6E1014B49D7F009BEE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7E6E1114B49D7F009BEE12 /* Build configuration list for PBXNativeTarget "HelloCloudMade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7E6E1214B49D7F009BEE12 /* Debug */,
+				DF7E6E1314B49D7F009BEE12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF7E6DE714B49D7E009BEE12 /* Project object */;
+}
