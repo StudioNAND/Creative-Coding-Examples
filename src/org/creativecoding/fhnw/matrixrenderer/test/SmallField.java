@@ -1,7 +1,7 @@
 package org.creativecoding.fhnw.matrixrenderer.test;
 
+import org.creativecoding.fhnw.matrixrenderer.MatrixField;
 import processing.core.PGraphics;
-import fhnw.matrixrenderer.MatrixField;
 
 
 public class SmallField extends MatrixField {
