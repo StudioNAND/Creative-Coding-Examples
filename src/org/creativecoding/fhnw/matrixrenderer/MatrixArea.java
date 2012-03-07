@@ -1,4 +1,4 @@
-package fhnw.matrixrenderer;
+package org.creativecoding.fhnw.matrixrenderer;
 
 
 public abstract class MatrixArea extends MatrixSpace {

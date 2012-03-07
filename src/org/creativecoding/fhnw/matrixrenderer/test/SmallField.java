@@ -1,4 +1,4 @@
-package fhnw.matrixrenderer.test;
+package org.creativecoding.fhnw.matrixrenderer.test;
 
 import processing.core.PGraphics;
 import fhnw.matrixrenderer.MatrixField;

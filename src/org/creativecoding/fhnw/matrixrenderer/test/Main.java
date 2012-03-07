@@ -1,4 +1,4 @@
-package fhnw.matrixrenderer.test;
+package org.creativecoding.fhnw.matrixrenderer.test;
 
 import fhnw.matrixrenderer.MatrixRenderer;
 import processing.core.PApplet;
