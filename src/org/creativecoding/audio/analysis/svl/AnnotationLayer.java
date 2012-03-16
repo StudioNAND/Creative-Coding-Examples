@@ -91,7 +91,7 @@ public class AnnotationLayer
 		public long mFrame;
 		
 		@XmlAttribute(name="value")
-		public int mValue;
+		public float mValue;
 		
 		@XmlAttribute(name="duration")
 		public long mDuration;

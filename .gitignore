@@ -3,6 +3,7 @@
 /bin
 applet_js/*
 data/discogs/*
+src/test
 
 # Exclude the build directory
 build/*

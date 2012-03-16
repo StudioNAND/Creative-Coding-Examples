@@ -1,4 +1,6 @@
-package org.creativecoding.resonate;
+package org.creativecoding.resonate.test;
+
+import org.creativecoding.resonate.LabelArchive;
 
 import processing.core.PApplet;
 

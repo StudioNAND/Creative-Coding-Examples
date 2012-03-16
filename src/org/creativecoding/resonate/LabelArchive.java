@@ -15,6 +15,13 @@ import processing.core.PApplet;
 @XmlRootElement(name = "Content")
 public class LabelArchive
 {
+	/**
+	 * Load label archive file.
+	 * 
+	 * @param parent The Processing sketch
+	 * @param fileName Name and path of the archive file
+	 * @return Initialised LabelArchive instance
+	 */
 	public static LabelArchive loadFromJson( PApplet parent, String fileName )
 	{
 		try
@@ -35,48 +42,84 @@ public class LabelArchive
 		}
 		return null;
 	}
-
+	
+	/**
+	 * Label profile text.
+	 */
 	@XmlAttribute(name = "profile")
 	public String mProfile;
 
+	/**
+	 * Release list URL
+	 */
 	@XmlAttribute(name = "releases_url")
 	public String mReleasesUrl;
 
+	/**
+	 * Label name.
+	 */
 	@XmlAttribute(name = "name")
 	public String mName;
 
+	/**
+	 * Discogs label profile page URL.
+	 */
 	@XmlAttribute(name = "uri")
 	public String mUri;
 
 	@XmlAttribute(name = "resource_url")
 	public String mResourceUrl;
 
+	/**
+	 * Label contact information.
+	 */
 	@XmlAttribute(name = "contactinfo")
 	public String mContactInfo;
 
+	/**
+	 * Discogs label ID.
+	 */
 	@XmlAttribute(name = "id")
 	public String mId;
 
 	@XmlAttribute(name = "data_quality")
 	public String mDataQuality;
 
+	/**
+	 * List of sublabels.
+	 */
 	@XmlAttribute(name = "sublabels")
-	List<String> mSublabels;
+	public List<String> mSublabels;
 
+	/**
+	 * List of label relevant URLs.
+	 */
 	@XmlAttribute(name = "urls")
-	List<String> mUrls;
+	public List<String> mUrls;
 
+	/**
+	 * List of URLs to label relevant images.
+	 */
 	@XmlAttribute(name = "images")
-	List<Image> mImages;
+	public List<Image> mImages;
 	
+	/**
+	 * Label release list.
+	 */
 	@XmlAttribute(name = "releases")
-	List<Release> mReleases;
+	public List<Release> mReleases;
 
 	public static class Release
 	{
+		/**
+		 * Publishing year
+		 */
 		@XmlAttribute(name = "year")
 		public int mYear;
 
+		/**
+		 * Discogs release ID (unique).
+		 */
 		@XmlAttribute(name = "id")
 		public int mId;
 		
@@ -85,7 +128,10 @@ public class LabelArchive
 
 		@XmlAttribute(name = "thumb")
 		public String mThumb;
-
+		
+		/**
+		 * Release title.
+		 */
 		@XmlAttribute(name = "title")
 		public String mTitle;
 
@@ -97,7 +143,10 @@ public class LabelArchive
 
 		@XmlAttribute(name = "released")
 		public String mReleased;
-
+		
+		/**
+		 * Release country information.
+		 */
 		@XmlAttribute(name = "country")
 		public String mCountry;
 
@@ -116,41 +165,50 @@ public class LabelArchive
 		@XmlAttribute(name = "data_quality")
 		public String mDataQuality;
 
+		/**
+		 * List of related styles.
+		 */
 		@XmlAttribute(name = "styles")
-		List<String> mStyles;
+		public List<String> mStyles;
 
 		@XmlAttribute(name = "series")
-		List<Series> mSeries;
+		public List<Series> mSeries;
 
 		@XmlAttribute(name = "labels")
-		List<Label> mLabels;
+		public List<Label> mLabels;
 
+		/**
+		 * List of involved artists.
+		 */
 		@XmlAttribute(name = "artists")
-		List<Artist> mArtists;
+		public List<Artist> mArtists;
 
 		@XmlAttribute(name = "images")
-		List<Image> mImages;
+		public List<Image> mImages;
 
+		/**
+		 * List of related genres.
+		 */
 		@XmlAttribute(name = "genres")
-		List<String> mGenres;
+		public List<String> mGenres;
 
 		@XmlAttribute(name = "extraartists")
-		List<Artist> mExtraArtists;
+		public List<Artist> mExtraArtists;
 
 		@XmlAttribute(name = "tracklist")
-		List<Track> mTracklist;
+		public List<Track> mTracklist;
 
 		@XmlAttribute(name = "identifiers")
-		List<Identifier> mIdentifiers;
+		public List<Identifier> mIdentifiers;
 
 		@XmlAttribute(name = "formats")
-		List<Format> mFormats;
+		public List<Format> mFormats;
 		
 		@XmlAttribute(name = "companies")
-		List<Company> mCompanies;
+		public List<Company> mCompanies;
 		
 		@XmlAttribute(name = "videos")
-		List<Video> mVideos;
+		public List<Video> mVideos;
 	}
 
 	public static class Series
@@ -170,18 +228,30 @@ public class LabelArchive
 		@XmlAttribute(name = "entity_type")
 		public String mEntityType;
 	}
-
+	
+	/**
+	 * Label information.
+	 */
 	public static class Label
 	{
+		/**
+		 * Discogs label ID.
+		 */
 		@XmlAttribute(name = "id")
 		public int mId;
-
+		
 		@XmlAttribute(name = "resource_url")
 		public String mResourceUrl;
 
+		/**
+		 * Official label catalog number.
+		 */
 		@XmlAttribute(name = "catno")
 		public String mCatNo;
 
+		/**
+		 * Name of the label.
+		 */
 		@XmlAttribute(name = "name")
 		public String mName;
 
@@ -192,11 +262,17 @@ public class LabelArchive
 		public String mEntityTypeName;
 	}
 
+	/**
+	 * Artist information.
+	 */
 	public static class Artist
 	{
 		@XmlAttribute(name = "join")
 		public String mJoin;
 
+		/**
+		 * Name of the artist.
+		 */
 		@XmlAttribute(name = "name")
 		public String mName;
 
@@ -206,12 +282,18 @@ public class LabelArchive
 		@XmlAttribute(name = "tracks")
 		public String mTracks;
 
+		/**
+		 * Role of the artist.
+		 */
 		@XmlAttribute(name = "role")
 		public String mRole;
 
 		@XmlAttribute(name = "resource_url")
 		public String mResourceUrl;
 
+		/**
+		 * Discogs artist ID.
+		 */
 		@XmlAttribute(name = "id")
 		public int mId;
 	}
@@ -237,22 +319,40 @@ public class LabelArchive
 		public String mUri150;
 	}
 
+	/**
+	 * Track information.
+	 */
 	public static class Track
 	{
+		/**
+		 * Duration (4:48)
+		 */
 		@XmlAttribute(name = "duration")
 		public String mDuration;
 
+		/**
+		 * Track position in release track listing.
+		 */
 		@XmlAttribute(name = "position")
 		public String mPosition;
 
+		/**
+		 * Name of the track.
+		 */
 		@XmlAttribute(name = "title")
 		public String mTitle;
 		
+		/**
+		 * Performers.
+		 */
 		@XmlAttribute(name = "artists")
-		List<Artist> mArtists;
+		public List<Artist> mArtists;
 		
+		/**
+		 * Extra performers.
+		 */
 		@XmlAttribute(name = "extraartists")
-		List<Artist> mExtraArtists;
+		public List<Artist> mExtraArtists;
 	}
 
 	public static class Identifier
@@ -270,7 +370,7 @@ public class LabelArchive
 	public static class Format
 	{
 		@XmlAttribute(name = "descriptions")
-		List<String> mDescriptions;
+		public List<String> mDescriptions;
 
 		@XmlAttribute(name = "name")
 		public String mName;
